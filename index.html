@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Xếp hạng học lực</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            //Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ
+            //>=8.5 giỏi //>=7 khá// >=5 tb//>=0 kém
+            var DTgiuaki, DTcuoiki;
+            DTgiuaki = parseInt(prompt("Nhập vào điểm thi giữa kì: "));
+            DTcuoiki = parseInt(prompt("Nhập vào điểm thi cuối kì: "));
+            diemTB = (DTgiuaki + DTcuoiki) /2;
+            while(diemTB>=8.5){
+                alert("Điểm số học sinh "+diemTB+" - xếp loại: giỏi");
+            }while(diemTB>=7){
+                alert("Điểm số học sinh "+diemTB+" - xếp loại: khá");
+            }while(diemTB>=5){
+                alert("Điểm số học sinh "+diemTB+" - xếp loại: Trung bình");
+            }while(diemTB>=0){
+                alert("Điểm số học sinh "+diemTB+" - xếp loại: kém");
+            }
+        </script>
+    </body>
+</html>
